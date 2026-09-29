@@ -1,53 +1,86 @@
 # 6. Fix common problems
 
-## The game crashed. Where do I start?
+## 💥 The game crashed. What now?
 
-1. Select the instance, click **Edit → Minecraft Log**.
-2. Scroll to the bottom and look for the first line with **Caused by:** or **Exception**. The mod's name is often in it.
-3. Still stuck? Click **Upload** at the bottom of the log page and share the link when asking for help, instead of screenshots.
+### Step 1: Open the log
 
-## Common crash causes
+1. In the main window, click the instance **once**.
+2. Click **Edit...** on the right.
+3. In the list on the left, click **Minecraft Log** (it's the very first item).
 
-| Message in the log | What it means | Fix |
+### Step 2: Find the problem line
+
+1. Scroll to the **bottom** of the log.
+2. Scroll **up** slowly until you see red text or a line that starts with **`Caused by:`** or contains **`Exception`** or **`Error`**.
+3. Look at the table below. Press **Ctrl + F** (Mac: **Cmd + F**) in your browser to search this page for a word from your error.
+
+| If the log says... | It means... | Fix it like this |
 |---|---|---|
-| `Incompatible mods found!` / `requires ... which is missing` | A mod needs another mod you don't have. | Install the mod it names (often **Fabric API**). |
-| `Missing or unsupported mandatory dependencies` | Same thing on Forge/NeoForge. | Install or update the mod named after `Mod ID:`. |
-| `NoClassDefFoundError` | A required library mod is missing, or a mod is for the wrong loader/version. | Check each mod matches the instance's version and loader. |
-| `OutOfMemoryError` | Minecraft ran out of RAM. | See below. |
-| `class file version 65.0` (or similar) | Wrong Java version. | **Edit → Settings → Java**: turn automatic Java back on. |
-| `Mixin apply for mod X failed` | Mod X doesn't fit this version or clashes with another mod. | Update or remove mod X. |
-| `Found duplicate mods` | The same mod is installed twice. | Remove the older copy in **Edit → Mods**. |
+| `Incompatible mods found!` or `requires ... which is missing!` | A mod needs another mod you don't have. | Read the line: it names the missing mod. Install it with **Download Mods** ([guide 4](04-add-mods.md)). Very often it's **Fabric API**. |
+| `Missing or unsupported mandatory dependencies` + `Mod ID: 'something'` | Same thing, on Forge/NeoForge. | Install the mod called *something*. |
+| `NoClassDefFoundError` or `ClassNotFoundException` | A needed mod is missing, **or** a mod is for the wrong loader/version. | Check every mod is for your instance's version **and** loader. If it mentions `fabricmc.fabric`, install **Fabric API**. |
+| `java.lang.OutOfMemoryError` | Minecraft ran out of RAM. | [Give it more memory](#not-enough-memory). |
+| `class file version 65.0` (or 61.0, 69.0...) | Wrong Java version. | [Turn on automatic Java](#wrong-java). |
+| `Mixin apply for mod XYZ failed` | Mod *XYZ* doesn't fit this Minecraft version, or fights with another mod. | Update or remove mod *XYZ*. |
+| `Found duplicate mods` | The same mod is installed twice. | On the **Mods** page, delete the older copy. |
+| `Pixel format not accelerated` / `OpenGL` | Your graphics driver is old. | Update it from the NVIDIA, AMD or Intel website. |
+
+### Step 3: Still stuck? Ask for help the right way
+
+1. On the **Minecraft Log** page, click **Upload** at the bottom.
+2. Prism gives you a **link**. Copy it.
+3. When asking for help (the mod's Discord, a forum, a friend), send:
+   - the **link** (not a screenshot!)
+   - your **Minecraft version** and **mod loader**
+   - what you did right before it broke
+
+---
 
 ## Not enough memory
 
-1. Select the instance, **Edit → Settings → Java**.
-2. Tick the **Memory** box, then set **Maximum memory allocation**.
+Big modpacks need more RAM than the default.
 
-Rough guide:
+1. Click the instance **once**, then **Edit...**.
+2. In the list on the left, click **Settings** (near the bottom).
+3. At the top of that page, click the **Java** tab.
+4. Find the **Memory** box and **tick its checkbox** so you can change it.
+5. Change **Maximum Memory Usage** to:
 
-| Setup | Maximum memory |
-|---|---|
-| Vanilla or a few mods | 2–4 GB (2048–4096 MB) |
-| Medium modpack (50–150 mods) | 4–6 GB |
-| Big modpack (150+ mods) | 6–8 GB |
+   | Your setup | Set it to |
+   |---|---|
+   | No mods / a few mods | **4096 MiB** |
+   | Medium modpack (50–150 mods) | **6144 MiB** |
+   | Huge modpack (150+ mods) | **8192 MiB** |
 
-Don't give it more than about half your computer's RAM, and more than 8 GB rarely helps. It can even cause lag spikes.
+6. Close the window. It saves by itself.
 
-## The game is slow
+⚠️ Never use more than **half** of your computer's RAM. (Windows: **Settings → System → About** shows it. Mac: ** → About This Mac**.) More than 8192 rarely helps and can cause lag spikes.
 
-- On Fabric, add **Sodium**, **Lithium** and **FerriteCore**. On NeoForge, try **Embeddium** and **ModernFix**.
-- Lower the render distance in Minecraft's video settings.
-- Laptops: make sure Java uses your graphics card and the laptop is plugged in.
+## Wrong Java
 
-## I can't sign in
+1. Click the instance **once**, then **Edit...** → **Settings** → **Java** tab.
+2. **Untick** the **Java Installation** box. That makes the instance use Prism's automatic Java again.
+3. Launch again. Prism downloads the right Java if needed.
 
-- Make sure the account owns Minecraft: Java Edition. Check at [minecraft.net](https://www.minecraft.net) → Profile.
-- Remove the account in **Settings → Accounts** and add it again.
+If that doesn't help: main window → **Settings** → **Java** → make sure **Auto-download Mojang Java** is ticked.
 
-## Getting help
+## The game is laggy
 
-- [Prism Launcher wiki](https://prismlauncher.org/wiki/)
-- The modpack's or mod's own page (Modrinth/CurseForge usually link a Discord or issue tracker).
-- Always include your **uploaded log link**, the Minecraft version and the mod loader.
+- **Fabric:** add **Sodium**, **Lithium** and **FerriteCore** (search them in **Download Mods**).
+- **NeoForge / Forge:** add **Embeddium** and **ModernFix**.
+- In the game: **Options → Video Settings** → lower **Render Distance** to 8–12.
+- Laptop: plug it in, and close Chrome/Discord while playing.
 
-Next: [Stay safe when downloading mods](07-safety.md)
+## I can't sign in / "you don't own Minecraft"
+
+1. Main window → **Settings** → **Accounts**.
+2. Click your account → **Remove**.
+3. Click **Add Microsoft** and sign in again with the email that **bought** Minecraft ([guide 2](02-sign-in.md)).
+
+## The launcher itself won't open
+
+- Restart your computer and try again.
+- Reinstall Prism from **prismlauncher.org/download**. Your instances are kept.
+- Still broken? Read the [Prism Launcher wiki](https://prismlauncher.org/wiki/) or ask on their Discord.
+
+➡️ Next: [Stay safe when downloading mods](07-safety.md)

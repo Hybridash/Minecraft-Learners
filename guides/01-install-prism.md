@@ -1,35 +1,71 @@
 # 1. Install Prism Launcher
 
-Prism Launcher is free. Always get it from the official site: **[prismlauncher.org/download](https://prismlauncher.org/download)**.
+⏱️ About 5 minutes. Prism Launcher is **free**. If a site asks you to pay for it, it's a scam.
 
-## Windows
+## Step 1: Go to the official download page
 
-1. On the download page, choose **Windows**.
-2. Download the **Setup** (installer) version.
-3. Run it and click through the installer. Windows may show "Windows protected your PC". If it does, click **More info → Run anyway** only if you downloaded it from prismlauncher.org.
+1. Open your web browser (Chrome, Edge, Safari, Firefox...).
+2. Click the address bar at the very top, type **`prismlauncher.org/download`**, and press **Enter**.
+3. You should see a page titled **Download**, with buttons for **Windows**, **macOS** and **Linux**.
 
-## macOS
+> ⚠️ Only download Prism from **prismlauncher.org**. Other sites can hide viruses in the download.
 
-1. On the download page, choose **macOS**. The same download works on Apple Silicon (M1/M2/M3...) and Intel Macs.
-2. Open the downloaded file and drag **Prism Launcher** into **Applications**.
-3. Open it from Applications. If macOS says it can't check the app, go to **System Settings → Privacy & Security** and click **Open Anyway**.
+## Step 2: Download and install it for your computer
 
-## Linux
+<details open>
+<summary><b>🪟 Windows</b></summary>
 
-The easiest way on most distributions is **Flatpak** from Flathub:
+1. Click **Windows**.
+2. Click the download that says **Setup** (or **Installer**). A file named something like `PrismLauncher-Windows-...-Setup.exe` downloads.
+3. When it's done, click the file in your browser's downloads bar. You can also open **File Explorer → Downloads** and double-click it.
+4. If a blue box says **"Windows protected your PC"**:
+   - click **More info**
+   - then click **Run anyway**
+5. The installer opens. Click **Next → Next → Install**.
+6. Leave **Run Prism Launcher** ticked and click **Finish**.
+
+From now on, open Prism from the **Start menu**: press the **Windows key** and type `Prism`.
+</details>
+
+<details>
+<summary><b>🍎 Mac (Apple Silicon M1/M2/M3/M4 <i>and</i> Intel)</b></summary>
+
+1. Click **macOS**. The same download works on every Mac.
+2. A `.zip` or `.dmg` file downloads. Open your **Downloads** folder (in the Dock, or **Finder → Downloads**) and double-click it.
+3. You'll see **Prism Launcher** with a colourful icon. **Drag it onto the Applications folder.**
+4. Open **Finder → Applications** and double-click **Prism Launcher**.
+5. If your Mac says it *"can't be opened"* or *"can't check it for malicious software"*:
+   - click **Done** (or **OK**)
+   - open the **Apple menu  → System Settings → Privacy & Security**
+   - scroll down and click **Open Anyway** next to Prism Launcher
+   - type your Mac password if it asks
+</details>
+
+<details>
+<summary><b>🐧 Linux</b></summary>
+
+The easy way (works on most distros): open your **Software** app, search **Prism Launcher**, and click **Install**.
+
+Or in a terminal:
 
 ```sh
 flatpak install flathub org.prismlauncher.PrismLauncher
 ```
+</details>
 
-There's also an AppImage and packages for many distributions on the download page.
+## Step 3: The first-start wizard
 
-## First start
+The first time Prism opens, it asks a few questions. Here's exactly what to pick:
 
-The first time you open Prism, a setup wizard asks for:
+| The window asks about... | Do this |
+|---|---|
+| **Language** | Pick your language, click **Next**. |
+| **Java** | Leave the automatic options on. If it asks about auto-downloading Java, click **Enable Auto-Download**. Prism then downloads the correct Java for each Minecraft version, so you **don't** need to install Java yourself. |
+| **Theme / look** | Pick whatever you like, click **Next**. |
+| **Add Microsoft account** | You can click **Add Microsoft account** now and follow [guide 2](02-sign-in.md) from step 4. You can also skip it and do all of guide 2 later. |
 
-- **Language**
-- **Java**: leave the automatic options on. Prism downloads the right Java for each Minecraft version by itself.
-- **Memory**: the default is fine for now. You can change it later (see [Fix common problems](06-troubleshooting.md)).
+Not every page shows up for everyone. That's normal.
 
-Next: [Sign in with your Microsoft account](02-sign-in.md)
+✅ **Done when:** you see the main Prism window with an **Add Instance** button in the top-left corner.
+
+➡️ Next: [Sign in with your Microsoft account](02-sign-in.md)

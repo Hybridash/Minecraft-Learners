@@ -14,14 +14,22 @@ Read them in order the first time:
 6. [Fix common problems](guides/06-troubleshooting.md)
 7. [Stay safe when downloading mods](guides/07-safety.md)
 
-## The short version
+## What it looks like
 
-1. Buy Minecraft: Java Edition at [minecraft.net](https://www.minecraft.net). Prism needs an account that owns the game.
-2. Download Prism from [prismlauncher.org/download](https://prismlauncher.org/download) and install it.
-3. Sign in: **Settings → Accounts → Add Microsoft**.
-4. Click **Add Instance**, pick a Minecraft version and a mod loader (usually **Fabric** or **NeoForge**), and click **OK**.
-5. Select the instance, click **Edit → Mods → Download Mods**, pick your mods, then **Review and confirm → OK**.
-6. Click **Launch**.
+![Prism main window with numbered buttons](images/main-window.svg)
+
+The pictures in these guides are **simplified drawings** with numbered red circles showing where to click. The real Prism window has the same buttons in the same places, but looks a bit different (colours, icons, theme).
+
+## The super-short version
+
+1. **Buy** Minecraft: Java Edition at [minecraft.net](https://www.minecraft.net).
+2. **Install** Prism from [prismlauncher.org/download](https://prismlauncher.org/download).
+3. **Sign in:** click **Settings** (top) → **Accounts** (left) → **Add Microsoft** (right).
+4. **New instance:** click **Add Instance** (top-left) → type a name → click a version → pick **Fabric** → **OK**.
+5. **Add mods:** click your instance → **Edit...** (right) → **Mods** (left) → **Download Mods** (right) → search → **Select mod for download** → **Review and confirm** → **OK**.
+6. **Play:** click your instance → **Launch** (right).
+
+Stuck on a step? The numbered guides above explain every click.
 
 ## Words you'll see
 

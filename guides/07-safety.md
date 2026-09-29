@@ -7,7 +7,7 @@ Mods are programs. A bad one can steal accounts or damage your computer, so be p
 - Download mods and modpacks **through Prism** or from **[modrinth.com](https://modrinth.com)** and **[curseforge.com](https://www.curseforge.com)**.
 - Get OptiFine only from **optifine.net**.
 - Check that a mod has lots of downloads, recent updates and a real author page.
-- Keep backups of worlds you care about. In **Edit → Worlds** you can copy a world, or copy the instance's `saves` folder.
+- Keep backups of worlds you care about. Click your instance → **Edit...** → **Worlds** → pick the world → **Copy**, or copy the instance's `saves` folder.
 
 ## Don't
 
