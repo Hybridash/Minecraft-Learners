@@ -22,7 +22,7 @@ Some CurseForge authors don't allow other apps to download their files. When tha
 
 ## Add a mod file you already downloaded
 
-In **Edit → Mods**, drag the `.jar` file into the list, or use **Add file**. Only do this with files from sites you trust (see [Stay safe](07-safety.md)).
+In **Edit → Mods**, drag the `.jar` file into the list, or use **Add File**. Only do this with files from sites you trust (see [Stay safe](07-safety.md)).
 
 ## Managing mods
 
